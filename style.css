@@ -1,231 +1,151 @@
-@charset "utf-8";
+@charset "UTF-8";
 
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+html {
+  font-size: 100%;
 }
 
-header {
-  background-color: rgb(220, 220, 220);
-  display: flex;
-  justify-content: space-between;
-  padding: 15px;
-}
-
-header ul {
-  list-style: none;
-  display: flex;
-  width: 40%;
-}
-
-header ul li {
-  width: 100%;
-  text-align: center;
-  line-height: 3;
-  margin: 0 5px;
-  border-bottom: 1px solid black;
+body {
+  color: #383e45;
+  font: size 0.9em;
 }
 
 a {
-  color: black;
   text-decoration: none;
 }
 
-.box {
-  width: 90%;
-  height: 670px;
-  margin: 0 auto;
-  overflow: hidden;
+img {
+  max-width: 100%;
 }
 
-.main-image {
-  width: 90%;
-  height: 670px;
+li {
+  list-style: none;
+}
+
+.site-title {
+  width: 120px;
+  line-height: 1px;
+  padding: 10px 0;
+}
+
+.site-title a {
   display: block;
-  margin: 0 auto;
-  animation: abc 3000ms linear;
 }
 
-main section {
-  background-color: rgba(223, 223, 223, 0.288)
+.section-title {
+  display: inline-block;
+  font-size: 2rem;
+  margin-bottom: 60px;
+  border-bottom: solid 1px #383e45;
 }
 
-article {
-  width: 80%;
-  margin: 0 auto;
-  background-color: rgba(255, 255, 255, 0.924);
-  text-align: center;
-  padding: 40px;
-}
-
-.parent {
-  width: 100%;
-  display: flex;
-  gap: 6px;
-  flex-wrap: wrap;
-  padding: 10px;
-  background-color: rgb(0, 0, 0);
-}
-
-.parent div {
-  background-color: rgb(255, 255, 255);
-  width: calc((100% - 12px)/3);
-}
-
-article h1 {
-  background-color: black;
-  color: white;
-  width: 40%;
-  border-radius: 20px;
-  margin: 0px auto;
-}
-
-article p {
-  padding: 30px 0;
-  /* background-color: antiquewhite; */
-}
-
-.parent p {
-  font-size: 8px
-}
-
-.parent img {
-  width: 100%;
-  border-radius: 50px;
+.content-title {
+  font-size: 1rem;
   margin: 10px 0;
 }
 
-#achievements div {
-  background-color: rgb(172, 172, 172);
-  width: 80%;
-  border: 1px solid;
-  padding: 10px;
-  margin: 10px auto;
-}
-
-#form {
+.wrapper {
+  max-width: 960px;
+  margin: 0 auto 100px;
+  padding: 0 4%;
   text-align: center;
 }
 
-#form input,
-textarea {
-  width: 80%;
+/* header */
+#header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+}
+
+#header ul {
+  display: flex;
+  padding: 10px 0;
+}
+
+#header li {
+  margin-left: 30px;
+}
+
+#header li a {
+  color: #24292e;
+}
+
+#header li a:hover {
+  opacity: 0.7;
+}
+
+/* mainvisual */
+#mainvisual {
+  margin-bottom: 80px;
+}
+
+#mainvisual img {
+  width: 100%;
+  max-width: 1920px;
+  height: 600px;
+  object-fit: cover;
+}
+
+/* about */
+#about .content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#about img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  margin-right: 30px;
+}
+
+#about .text {
+  text-align: left;
+}
+
+/* bicycle */
+#bicycle ul {
+  display: flex;
+  justify-content: space-between;
+}
+
+#bicycle li {
+  width: 32%;
+}
+
+/* footer */
+#footer {
+  font-size: 0.5rem;
   padding: 10px 0;
   text-align: center;
 }
 
-#form label {
-  display: block;
-  margin: 30px 0;
-}
+/* sp */
+@madia screen and(max-width:600px) {
 
+  /* mainvisual */
+  #mainvisual img {
+    heigth: calc(100vh-60px);
+  }
 
-.link {
-  display: block;
-  margin: 10px auto;
-  width: 30%;
-  text-align: center;
-  background-color: black;
-  padding: 10px 0px;
-  color: white;
-  text-decoration: none;
-}
-
-.last-p {
-  background-color: black;
-  color: white;
-  text-align: center;
-  font-size: 10px;
-  letter-spacing: 10px;
-  padding: 10px 0px;
-}
-
-@madia (max-width:390px) {
-  header {
+  /* about */
+  #about .content {
     flex-direction: column;
   }
 
-  header h1 {
-    text-align: center;
+  #about img {
+    margin-right: 0;
   }
 
-  header ul {
+  /* bicycle */
+  #bicycle ul {
+    flex-direction: column;
+  }
+
+  #bicycle li {
     width: 100%;
-  }
-
-  header li {
-    font-size: 10px;
-  }
-
-  .main-image {
-    width: 100%;
-    height: 250px;
-    object-fit: cover;
-  }
-
-  article {
-    width: 100%;
-    padding: 10px;
-  }
-
-  article h1 {
-    width: 100%;
-  }
-
-  article p {
-    font-size: 11px;
-  }
-
-  .parent div {
-    width: 100%;
-  }
-
-  .parent p {
-    padding: 0;
-  }
-
-  .parent img {
-    width: 100%;
-    boder-radius: 0;
-  }
-
-  #achievements p {
-    padding: 10px;
-  }
-
-  #achievements div {
-    width: 100%;
-  }
-
-  .link {
-    width: 60%: font-size: 10px;
-    margin: 20px auto;
-    boder-redius: 30px;
-  }
-
-  .last-p {
-    letter-spacing: 3px;
-  }
-
-  .box {
-    width: 90%;
-    height: 300px;
-  }
-}
-
-@keyframes abc {
-  0% {
-    scale: 0;
-    opacity: 0;
-  }
-
-  50% {
-    scale: 3;
-  }
-
-  100% {
-    scale: 1;
-    opacity: 1;
+    margin-bottom: 30px;
   }
 }
