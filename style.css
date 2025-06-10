@@ -16,21 +16,13 @@
   position: relative;
 }
 
-h3{
-  font-family: "Albert Sans", sans-serif;
-  font-weight: 300;
-  font-size: 16px;
-  padding-bottom: 30px;
-  padding-left: 30px;
-}
-
 .soushoku01 {
   content: "";
   position: absolute;
-  background-image: url(img/blue.png);
+  background-image: url(img/BFFCC6CB-pink.png);
   background-repeat: no-repeat;
   background-size: cover;
-  top: 250px;
+  bottom: 1120px;
   left: 60px;
   width: 18%;
   aspect-ratio: 1/1;
@@ -40,9 +32,10 @@ h3{
 .soushoku02 {
   content: "";
   position: absolute;
-  background-image: url(img/yellow.png);
+  background-image: url(img/D3A68EE5-blue.png);
   background-repeat: no-repeat;
   background-size: cover;
+  bottom: 1350px;
   left: 0px;
   width: 12%;
   aspect-ratio: 1/1;
@@ -52,11 +45,11 @@ h3{
 .soushoku03 {
   content: "";
   position: absolute;
-  background-image: url(img/blue.png);
+  background-image: url(img/BFFCC6CB-pink.png);
   background-repeat: no-repeat;
   background-size: cover;
-  top: 450px;
-  right: 2px;
+  top: 370px;
+  right: -150px;
   width: 18%;
   aspect-ratio: 1/1;
   z-index: -1;
@@ -65,11 +58,11 @@ h3{
 .soushoku04 {
   content: "";
   position: absolute;
-  background-image: url(img/yellow.png);
+  background-image: url(img/D3A68EE5-blue.png);
   background-repeat: no-repeat;
   background-size: cover;
   top: 300px;
-  right: 150px;
+  right: 70px;
   width: 12%;
   aspect-ratio: 1/1;
   z-index: -2;
@@ -113,7 +106,7 @@ h3{
 
 .works-title h2 {
   /* writing-mode: vertical-rl; */
-  font-size: 1.8vw;
+  font-size: 0.8333333333333334vw;
   font-weight: 500;
   letter-spacing: 0.4em;
 }
@@ -695,7 +688,7 @@ div.production-period ul li:last-child {
 .soushoku05 {
   content: "";
   position: absolute;
-  background-image: url(img/blue.png);
+  background-image: url(img/BFFCC6CB-pink.png);
   background-repeat: no-repeat;
   background-size: cover;
   bottom: -170px;
@@ -708,7 +701,7 @@ div.production-period ul li:last-child {
 .soushoku06 {
   content: "";
   position: absolute;
-  background-image: url(img/yellow.png);
+  background-image: url(img/D3A68EE5-blue.png);
   background-repeat: no-repeat;
   background-size: cover;
   bottom: 30px;
